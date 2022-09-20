@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #C21010, #a2ebbe);
+    margin: 1.5%;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    overflow: hidden;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.heading {
+    margin: 2.5%;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.main {
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.div {
+    display: flex;
+    margin: 3%;
+    margin-top: 4%;
+}
+
+.value {
+    margin-left: 30px;
+    margin-top: 5px;
+    height: 40px;
+    width: 250px;
+    border: #E64848 3px solid;
+    transition: 0.5s;
+    padding: 10px 20px;
+    float: right;
+    font-size: 17.5px;
+    font-weight: 600;
+}
+
+.value:focus {
+    background-color: #ff007731;
+    outline: none;
+}
+
+.main-final {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.submit {
+    margin: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #E64848;
+    border: #000 2px solid;
+}
+
+#finalAnswer {
+    height: 55px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    }
+
+    .heading {
+        margin: 0%;
+        margin-bottom: 10%;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .main {
+        margin: 1.25%;
+    }
+
+    .div {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .value {
+        margin-left: 0px;
+        margin-top: 25px;
+        height: 35px;
+        width: 100%;
+    }
+
+    .main-final {
+        margin-top: 20px;
+    }
+
+    #finalAnswer {
+        margin-top: 25px;
+    }
+
+}
